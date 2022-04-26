@@ -1,5 +1,5 @@
 .about{
-    background: #191919;;
+    background: #fdfdfd;;
 }
 img.about__img{
     border-radius: 10px;
@@ -22,6 +22,6 @@ button.about.btn.pointer{
 .about__button{
     padding: 20px 0px;
 }
-button.about.btn.pointer:hover{
-
+.about__text.p__color{
+    color: black
 }
