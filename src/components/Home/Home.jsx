@@ -1,6 +1,21 @@
 import React from 'react'
 import './Home.css'
-import logo from "./img/logo.png"
+import { motion } from 'framer-motion'
+import logo from "../../img/logo.png"
+import About from '../About/About'
+
+
+const textAnimation = {
+    hidden: {
+        x: -100,
+        opacity: 0,
+    },
+    visible: custom =>({
+        x: 0,
+        opacity: 1,
+        transition: {delay: custom * 0.2},
+    }),
+}
 
 function Home() {
   return (
@@ -26,20 +41,23 @@ function Home() {
             {/* HOME CONTENT */}
             <div className="container">
                 <div className="home__content">
-                    <div className="home__meta">
-                        <h1 className="home__text pz__10">
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible" variants={textAnimation}
+                        className="home__meta">
+                        <motion.h1 custom={1} variants={textAnimation} className="home__text pz__10">
                             WELCOME TO MY WORLD
-                        </h1>
-                        <h2 className="home__text pz__10">
+                        </motion.h1>
+                        <motion.h2 custom={2} variants={textAnimation} className="home__text pz__10">
                             Hi, I'm Nurlan 
-                        </h2>        
-                        <h3 className="home__text sweet pz__10">
+                        </motion.h2>        
+                        <motion.h3 custom={3} variants={textAnimation} className="home__text sweet pz__10">
                         JS Developer
-                        </h3>  
-                        <h4 className="home__text pz__10">
+                        </motion.h3>  
+                        <motion.h4 custom={4} variants={textAnimation} className="home__text pz__10">
                             based in TASHKENT
-                        </h4>        
-                    </div>
+                        </motion.h4>        
+                    </motion.div>
                 </div>
             </div>
         </div>

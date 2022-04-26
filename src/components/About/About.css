@@ -1,5 +1,5 @@
 .about{
-    background: #fdfdfd;;
+    background: #fdfdfd;
 }
 img.about__img{
     border-radius: 10px;
@@ -11,6 +11,7 @@ h1.about__heading{
     text-align: start;
     font-family: Montserrat, sans-serif;
     font-size: 60px;
+    color: black
 }
 button.about.btn.pointer{
     text-transform: capitalize;
@@ -23,5 +24,9 @@ button.about.btn.pointer{
     padding: 20px 0px;
 }
 .about__text.p__color{
-    color: black
+    color: black;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif ;
+    margin-top: 30px;
+
 }
