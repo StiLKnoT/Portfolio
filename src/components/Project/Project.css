@@ -1,5 +1,6 @@
 .project {
-    background-color: #fdfdfd;
+    /* background-color: #fdfdfd; */
+    background: radial-gradient(white, rgb(139, 136, 136), rgb(39, 38, 38))
 }
 img.project__img{
     border-radius: 10px;
@@ -103,4 +104,35 @@ p.heading2.p__color{
     text-align: center;
     line-height: 1.2;
     color: black;
+}
+
+@media only screen and (max-width: 1356px){
+    img.project__img {
+        max-width: 300px;
+        max-height: 375px;
+    }
+}
+
+@media only screen and (max-width: 1034px){
+    img.project__img {
+        max-width: 200px;
+        max-height: 250px;
+    }
+}
+    
+@media only screen and (max-width: 768px){
+img.project__img {
+    max-width: 200px;
+    max-height: 250px;
+    }
+}
+@media only screen and (max-width: 460px){
+img.project__img {
+    max-width: 100%;
+    }
+}
+@media only screen and (max-width: 425px){
+span.copyright {
+    font-size: 13px!important;
+    }
 }

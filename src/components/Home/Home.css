@@ -5,6 +5,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.home .logo{
+    margin-top: 0.5%;
+}
 li.nav__items{
     font-size: 18px;
     padding-bottom: 15px;
@@ -37,3 +40,76 @@ h4.home__text{
     line-height: 40px;
 
 }
+
+
+@media only screen and (max-width: 1356px){
+    col-12 {
+        max-width: 100%;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1034px){
+    col-12 {
+        max-width: 75%;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+    
+@media only screen and (max-width: 768px){
+    col-12 {
+    max-width: 75%;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 664px){
+    col-12 { 
+        max-width: 20%;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 342px){
+    col-12 { 
+        max-width: 10%;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 425px){
+span.copyright {
+    font-size: 13px!important;
+    }
+} 
+
+/* 
+
+@media only screen and (max-width: 768px){
+    .header{
+        justify-content: space-between;
+    }
+    .navigation.pxy__30{
+        display: none;
+    }
+    svg.bi.bi-list.white.pointer {
+        width: 30px;
+        height: 30px;
+    }
+} */

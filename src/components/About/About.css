@@ -1,9 +1,17 @@
 .about{
-    background: #fdfdfd;
+    background: radial-gradient( circle closest-corner,white, rgb(139, 136, 136) , rgb(39, 38, 38))
+    /* background: white; */
 }
 img.about__img{
     border-radius: 10px;
     width: 100%;
+}
+button.about.btn.pointer{
+    background: #f9004d ;
+
+}
+.button.btn{
+    background: white !important;
 }
 h1.about__heading{
     margin-bottom: 10px;
@@ -29,4 +37,53 @@ button.about.btn.pointer{
     font-family: Montserrat, sans-serif ;
     margin-top: 30px;
 
+}
+
+@media only screen and (max-width: 960px){
+    .about__button {
+        max-width: 300px;
+    
+    }
+    button.about{
+        max-width: 175px;
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 875px){
+    .about__button{
+        max-width: 200px;
+    
+    }
+    button.about{
+        max-width: 155px;
+    }
+}
+    
+@media only screen and (max-width: 768px){
+    .about__button{
+    max-width: 200px;
+
+    }
+}
+@media only screen and (max-width: 460px){
+    .about__button{
+    max-width: 100%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .about__button{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    }
+    button.about{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 425px){
+span.copyright {
+    font-size: 13px!important;
+    }
 }
