@@ -5,6 +5,9 @@ h1.heading{
     font-weight: 700;
     margin-bottom: 10px;
 }
+.service {
+    background-color: black;
+}
 p.heading.p__color{
     margin-bottom: 0;
     text-align: center;
@@ -41,4 +44,13 @@ h1.service__text{
     font-size: 19px;
     font-family: Poppins, sans-serif;
     padding: 10px 0px;
+}
+
+
+@media screen and (min-width: 1600px) {
+    .service{
+        max-width: 1600px;
+        margin: 0 auto;
+    }   
+    
 }

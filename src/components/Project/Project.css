@@ -54,14 +54,17 @@ h5.project__text{
     font-weight: 400;
     font-size: 22px;
     padding-bottom: 20px;
-    color: #f9004d;
+    color: red;
+    text-shadow: 1px 1px black;
+
 }
 h4.project__text{
     font-size: 22px;
     font-family: Poppins, sans-serif;
     font-weight: 700;
     padding-bottom: 20px;
-    color: #f9004d;
+    color: red;
+    text-shadow: 1px 1px rgb(56, 55, 55);
 }
 a.project__btn{
     padding: 12px 35px;
@@ -106,26 +109,37 @@ p.heading2.p__color{
     color: black;
 }
 
+@media screen and (min-width: 1600px) {
+    .project{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (max-width: 1356px){
     img.project__img {
         max-width: 300px;
         max-height: 375px;
     }
+    h4.project__text{
+        padding: 10px;
+        text-align: center;
+    }
 }
 
-@media only screen and (max-width: 1034px){
+/* @media only screen and (max-width: 1034px){
     img.project__img {
         max-width: 200px;
         max-height: 250px;
     }
-}
+} */
     
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
 img.project__img {
     max-width: 200px;
     max-height: 250px;
     }
-}
+} */
 @media only screen and (max-width: 460px){
 img.project__img {
     max-width: 100%;

@@ -1,0 +1,35 @@
+{
+    "navbar":{
+        "Home":"Bosh sahifa",
+        "About":"Men haqimda",
+        "Services":"Xizmatlarim",
+        "Portfolio":"Portfolio",
+        "Blog":"Blog",
+        "Contact":"Bog'lanish"
+      },
+    "title":{
+        "welcome":"DUNYOIMGA XUSH KELIBSIZ",
+        "salom":"Salom, mening ismim",
+        "Nurlan":"Nurlan",
+        "developer":"Dasturchi",
+        "based":"TOSHKENT shahridanman"
+    },
+    "about":{
+      "aboutMe":"Men haqimda",
+      "name":"Ismim: Nurlan",
+      "surname":"Familiyam: Qarshiyev",
+      "age":"Yoshim: 22",
+      "education":"Ta'lim: TUIT",
+      "course":"Kurs: 3",
+
+      "iAm":"Men junior frontend dasturchisiman",
+      "goals":"Men React JS va ES6 dan foydalanaman, bir nechta maqsadlarim bor:",
+      "specialist":"-  O'z sohamning professionali bo'lish",
+      "creation":"- yuqori sifatli loyihalarni yaratish va ularni onlayn ishga tushirish",
+      "demand":"- talabga ega bo'lgan mutaxassis bo'lish",
+      
+      "CV":"CVni yuklash",
+      "hireME":"Meni top"
+
+    }
+}

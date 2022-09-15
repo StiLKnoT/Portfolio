@@ -1,74 +1,151 @@
-import React from 'react'
-import './Service.css'
-import { motion } from 'framer-motion'
+import React from "react";
+import "./Service.css";
+import { motion } from "framer-motion";
 
 const textAnimation = {
-    hidden: {
-        y: -100,
-        opacity: 0,
-    },
-    visible: custom =>({
-        y: 0,
-        opacity: 1,
-        transition: {delay: custom * 0.2},
-    }),
-}
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
 const BlockAnimation = {
-    hidden: {
-        y: -100,
-        opacity: 0,
-    },
-    visible: custom =>({
-        y: 0,
-        opacity: 1,
-        transition: {delay: custom * 0.2},
-    }),
-}
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
+const createBoxs = (HText, text1, text2, text3, custom) => {
+  return { HText, text1, text2, text3, custom };
+};
+
+const arr = [
+  createBoxs(
+    "Business Strategy",
+    "I throw my self down among the",
+    "tall grass by the stream as I lie",
+    "close to the earth",
+    1
+  ),
+  createBoxs(
+    "Business Strategy",
+    "I throw my self down among the",
+    "tall grass by the stream as I lie",
+    "close to the earth",
+    2
+  ),
+  createBoxs(
+    "Business Strategy",
+    "I throw my self down among the",
+    "tall grass by the stream as I lie",
+    "close to the earth",
+    3
+  ),
+  createBoxs(
+    "Business Strategy",
+    "I throw my self down among the",
+    "tall grass by the stream as I lie",
+    "close to the earth",
+    4
+  ),
+  createBoxs(
+    "Business Strategy",
+    "I throw my self down among the",
+    "tall grass by the stream as I lie",
+    "close to the earth",
+    5
+  ),
+  createBoxs(
+    "Business Strategy",
+    "I throw my self down among the",
+    "tall grass by the stream as I lie",
+    "close to the earth",
+    6
+  ),
+];
 
 function Service() {
   return (
-    <div className="service component__space">
-        <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            
-            viewport={{amount: 0.2, once: true}}
-            className="heading">
-            <motion.h1 custom={1} variants={textAnimation} className="heading">My Awesome Service</motion.h1>
-            <motion.p custom={2} variants={textAnimation} className="heading p__color"> There are many variations of passages of Lorem Ipsum available</motion.p>
-            <motion.p custom={3} variants={textAnimation} className="heading p__color">but the majority have suffered alteration.</motion.p>
-        </motion.div>
+    <div className="service component__space" id="Services">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.2, once: true }}
+        className="heading"
+      >
+        <motion.h1 custom={1} variants={textAnimation} className="heading">
+          My Awesome Service
+        </motion.h1>
+        <motion.p
+          custom={2}
+          variants={textAnimation}
+          className="heading p__color"
+        >
+          {" "}
+          There are many variations of passages of Lorem Ipsum available
+        </motion.p>
+        <motion.p
+          custom={3}
+          variants={textAnimation}
+          className="heading p__color"
+        >
+          but the majority have suffered alteration.
+        </motion.p>
+      </motion.div>
 
-        <div className="container">
-            <motion.div 
-                initial="hidden"
-                whileInView="visible"
-                viewport={{amount: 0.2 }}
-                className="row">
+      <div className="container">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2 }}
+          className="row"
+          id="boxRow"
+        >
+          {arr.map((box, index) => {
+            return (
+              <motion.div
+                custom={`${box.custom}`}
+                variants={BlockAnimation}
+                className="col__3"
+              >
+                <div className="service__box pointer">
+                  <div className="icon">
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path>
+                      <line x1="2" y1="20" x2="2" y2="20"></line>
+                    </svg>
+                  </div>
+                  <div className="service__meta">
+                    <h1 className="service__text">{box.HText}</h1>
+                    <p className="service__text p__color">{box.text1}</p>
+                    <p className="service__text p__color">{box.text2}</p>
+                    <p className="service__text p__color">{box.text3}</p>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
 
-                <motion.div  custom={1} variants={BlockAnimation} className="col__3">
-                    <div className="service__box pointer">
-                        <div className="icon">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2" y2="20"></line></svg>
-                        </div>
-                        <div className="service__meta">
-                            <h1 className="service__text">
-                                Business Strategy
-                            </h1>
-                            <p className="service__text p__color">
-                                I throw my self down among the
-                            </p>
-                            <p className="service__text p__color">
-                                tall grass by the stream as I lie
-                            </p>
-                            <p className="service__text p__color">
-                               close to the earth
-                            </p>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <motion.div custom={2} variants={BlockAnimation} className="col__3">
+          {/* <motion.div custom={2} variants={BlockAnimation} className="col__3">
                     <div className="service__box pointer">
                         <div className="icon">
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
@@ -176,13 +253,11 @@ function Service() {
                             </p>
                         </div>
                     </div>
-                </motion.div>
-
-            </motion.div>
-        </div>
-      
+                </motion.div> */}
+        </motion.div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Service
+export default Service;

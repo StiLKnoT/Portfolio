@@ -1,3 +1,28 @@
+@media (prefers-reduced-motion: no-preference){
+    :root{
+        scroll-behavior: smooth !important;
+    }
+}
+#neon{
+    text-shadow: 0 0 3vw red;
+}
+#neon{
+    animation: neon 4s ease infinite;
+    -moz-animation: neon 4s ease infinite;
+    -webkit-animation: neon 4s ease infinite;
+}
+@keyframes neon{
+    0%,
+    100%{
+        text-shadow: 0 0 1vw #F9004D, 0 0 0.2vw #010101, 0 0 .2vh rgb(139, 136, 136), .2vh .2vh .2vh #fff;
+        color:  #F9004D;
+    }
+    50%{
+        text-shadow: 0 0 .5vw #fff; 
+        color:  #fff;
+    }
+}
+
 .home__bg{
     background-image: url(../../img/nurbg.jpg);
     background-color: #010101;
@@ -13,7 +38,7 @@ li.nav__items{
     padding-bottom: 15px;
 }
 .home__content{
-    padding: 125px 0px;
+    padding: 200px 0px;
 }
 h1.home__text{
     font-size: 18px;
@@ -40,7 +65,28 @@ h4.home__text{
     line-height: 40px;
 
 }
+.cursorSpan{
+    display: inline-block;
+    opacity: 1;
+    font-size: 50px;
+}
+.home__text{
+    opacity: 0;
+}
 
+@media screen and (min-width:1600px) {
+    .home{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 1600px) {
+    .home__bg{
+        height: 100vh !important;
+    }
+    
+}
 
 @media only screen and (max-width: 1356px){
     col-12 {
@@ -73,6 +119,12 @@ h4.home__text{
         flex-wrap: wrap;
         align-items: center;
     }
+    .home__content{
+        padding: 125px 0;
+    }
+    .myMainImg{
+        height: auto !important;
+    }
 }
 @media only screen and (max-width: 664px){
     col-12 { 
@@ -81,6 +133,9 @@ h4.home__text{
     .navbar{
         display: flex;
         flex-wrap: wrap;
+    }
+    .home__bg {
+        background-position: 82%;
     }
 }
 @media only screen and (max-width: 342px){
