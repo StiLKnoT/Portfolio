@@ -5,12 +5,12 @@ import Project__Olig from "../../img/portfolio-olig.jpg";
 import Project__Sneak from "../../img/portfolio-sneak.jpg";
 import Project3 from "../../img/portfolio-3.jpg";
 import Project4 from "../../img/portfolio-4.jpg";
-import Project5 from "../../img/portfolio-5.jpg";
 import gits from "../../img/gitsUz.png";
 import kozimxon from "../../img/kozimxon.png";
 import taqi from "../../img/taqi.png";
 import smm from "../../img/smm.png";
 import bolajon from "../../img/bolajon.png";
+import queshion from "../../img/queshion.jpg";
 
 const textAnimation = {
   hidden: {
@@ -44,43 +44,43 @@ const createProjects = (img, dev, title, link, custom) => {
 const projectArr = [
   createProjects(
     gits,
-    "Development",
-    "Getting tickets to the gig show",
+    "GITS.UZ",
+    "Site for guides and tourists",
     "http://gits.uz/",
     1
   ),
   createProjects(
     kozimxon,
-    "Development",
-    "Getting tickets to the gig show",
+    "Kozimxon Turayev",
+    "Business training courses",
     "https://kozimxon.uz/",
     2
   ),
   createProjects(
     taqi,
-    "Development",
-    "Getting tickets to the gig show",
+    "University Website",
+    "TAQI",
     "https://tiace.netlify.app",
     3
   ),
   createProjects(
     smm,
-    "Development",
-    "Getting tickets to the gig show",
+    "SMM CREATIVE",
+    "Landing page for SMM",
     "https://smmonline.netlify.app/",
     4
   ),
   createProjects(
     bolajon,
-    "Development",
-    "Getting tickets to the gig show",
+    "Bolajon",
+    "Private kindergarten website",
     "https://kindergard.netlify.app/",
     5
   ),
   createProjects(
     Project__Sneak,
-    "Development",
-    "Getting tickets to the gig show",
+    "Online Shop ",
+    "Sneakers shop",
     "https://reactjs-sneakers.netlify.app",
     6
   ),
@@ -92,26 +92,26 @@ const createOthers = (img, dev, title, link, custom) => {
 
 const arrOther = [
     createOthers(
-    gits,
-    "Development",
-    "Getting tickets to the gig show",
-    "http://gits.uz/",
+      queshion,
+    "EMPTY",
+    "Your application can be here",
+    "#",
     1
   ),
     createOthers(
     Project__Olig,
-    "Development",
-    "Getting tickets to the gig show",
+    "Online TEST SHOP",
+    "Online shop",
     "https://onlineshop075-20.netlify.app",
     2
   ),
-//     createOthers(
-//     gits,
-//     "Development",
-//     "Getting tickets to the gig show",
-//     "http://gits.uz/",
-//     3
-//   ),
+    createOthers(
+      queshion,
+    "EMPTY",
+    "Your application can be here",
+    "#",
+    3
+  ),
 ];
 
 function Project() {
@@ -164,11 +164,12 @@ function Project() {
                 variants={BlockAnimation}
                 className="col__3"
               >
-                <div className="project__box pointer">
+                <a target="_blank" href={project.link}>
+                  <div className="project__box pointer">
                   <div className="project__box__img pointer relative">
                     <div className="project__box__img pointer relative">
                       <div className="project__img__box">
-                        <img
+                        <img 
                           src={project.img}
                           alt="portfolio1"
                           className="project__img"
@@ -189,6 +190,7 @@ function Project() {
                     </div>
                   </div>
                 </div>
+                </a>
               </motion.div>
             );
           })}

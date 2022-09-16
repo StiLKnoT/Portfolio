@@ -33,7 +33,8 @@ h1.about__heading{
     text-align: start;
     font-family: Montserrat, sans-serif;
     font-size: 60px;
-    color: black
+    color: black;
+    text-shadow: 2px 2px #fff;
 }
 button.about.btn.pointer{
     text-transform: capitalize;
@@ -50,6 +51,7 @@ button.about.btn.pointer{
     font-weight: 700;
     font-family: Montserrat, sans-serif ;
     margin-top: 30px;
+    text-shadow: 1px 1px #fff;
 
 }
 .PlayBtn{
@@ -153,7 +155,15 @@ button.about.btn.pointer{
         top: -290px;
     }
     .VideoPlayer{
-        width: 100% !important;
+        width: 90% !important;
+        height: 250px !important;
+    }
+    .btnESC {
+        left: 88% !important;
+        top: -168px !important;
+    }
+    iframe{
+        width: 90% !important;
     }
 }
 @media only screen and (max-width: 400px){

@@ -12,20 +12,6 @@ import { TextPlugin } from "gsap/TextPlugin";
 import { useTranslation } from "react-i18next";
 
 
-// gsap.registerPlugin(TextPlugin, RoughEase);
-
-// const textAnimation = {
-//   hidden: {
-//     x: -100,
-//     opacity: 0,
-//   },
-//   visible: (custom) => ({
-//     x: 0,
-//     opacity: 1,
-//     transition: { delay: custom * 0.2 },
-//   }),
-// };
-
 function Home() {
   const {t, i18n} = useTranslation()
 
@@ -90,9 +76,9 @@ function Home() {
                   <li className="col-12 nav__items mx__15">{t("navbar.Contact")}</li>
                 </a>
                 <li>
-                    <select className="uz" aria-label="Default select example" onChange={changeLanguage} defaultValue="uz" >
-                      <option className="uz lang" value="uz" selected="true">UZ</option>
-                      <option className="uz lang" value="ru">RU</option>
+                    <select className="uz" aria-label="Default select example" onChange={changeLanguage} defaultValue="ru" >
+                      <option className="uz lang" value="uz">UZ</option>
+                      <option className="uz lang" value="ru" selected="true">RU</option>
                       <option className="uz lang" value="en">EN</option>
                     </select>                  
               </li>

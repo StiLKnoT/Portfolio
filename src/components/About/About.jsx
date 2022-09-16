@@ -5,6 +5,7 @@ import videoPlay from "../../img/videoPlay.jpg"
 import { motion } from 'framer-motion'
 import Skills from '../SKills/Skills';
 import { useTranslation } from "react-i18next";
+import myCV from '../../documents/myCV.pdf'
 
 
 const btnAnimation = {
@@ -82,12 +83,12 @@ function About() {
                         <div className='fixedPlayer'>{" "}
                         <div className='player'>
                             <button className='btnESC' onClick={()=>{setPlayers(!players)}}>X</button>
-                            <video
-                                src="http://165.232.76.226/media/gid/video/2022/08/23/VID_127280513_040752_3030.mp4"
+                            <iframe
+                                src="https://www.youtube.com/embed/F8MN0o6RS9o"
                                 allowFullScreen
                                 className="VideoPlayer" 
                                 controls
-                              ></video>
+                              ></iframe>
 
                         </div>
                         </div>
@@ -154,8 +155,8 @@ function About() {
                             variants={btnAnimation}
                             
                             className="about__button d__flex align__items__center">
-                            <a href="#"><button className="about btn pointer" id="aboutBtn">{t("about.CV")}</button></a>
-                            <a href="#"><button className="about btn pointer" id="aboutBtn">{t("about.hireME")}</button></a>
+                            <a href={myCV} download="CV Karshiyev Nurlan"><button className="about btn pointer" id="aboutBtn">{t("about.CV")}</button></a>
+                            <a href="https://github.com/StiLKnoT" target="_blank"><button className="about btn pointer" id="aboutBtn">{t("about.hireME")}</button></a>
                         </motion.div>
                     </div>
                 </motion.div>
