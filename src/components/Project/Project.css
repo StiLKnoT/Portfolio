@@ -123,15 +123,32 @@ p.heading2.p__color{
 .project__box:hover .project__meta.absolute{
     background: none;
 }
-.project__meta.absolute{
-    background: black;
+/* .project__meta.absolute{
+    background: linear-gradient(rgba(137, 137, 137, 0.6), rgb(13, 8, 8),black,red);
     opacity: .8;
-}
+} */
 .project__box:hover h4.project__text, .project__box:hover h5.project__text{
     display: none;
 }
 .project__box:hover a.project__btn {
     margin-top: 5em;
+}
+.project__meta.absolute{
+    background: linear-gradient(rgba(137, 137, 137, 0.6), rgb(13, 8, 8),black,red);
+    animation: gradient 5s ease infinite;
+    opacity: 0.8;
+    background-size: 200% 200%;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 
@@ -158,7 +175,7 @@ p.heading2.p__color{
         -webkit-filter: blur(0px) !important;
     }
     .project__meta.absolute{
-        background-color: initial !important;
+        background: inherit !important;
     }
     h5.project__text, h4.project__text{
         color: #fff;
