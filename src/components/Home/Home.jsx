@@ -10,10 +10,13 @@ import gsap from 'gsap'
 import { RoughEase } from "gsap/EasePack";
 import { TextPlugin } from "gsap/TextPlugin";
 import { useTranslation } from "react-i18next";
+import {BsJustify} from "react-icons/bs"
+import {ReactComponent as UzFlag} from '../../svg/uz.svg'
 
 
 function Home() {
   const {t, i18n} = useTranslation()
+  const [show, setShow] = React.useState(false)
 
   const changeLanguage = (e)=>{
     i18n.changeLanguage(e.target.value);
@@ -47,14 +50,22 @@ function Home() {
   
   }, []);
 
+  window.addEventListener("scroll", function(){
+    const header = document.querySelector(".header")
+    header.classList.toggle("active", window.scrollY > 0)
+  });
  
 
   return (
-    <div className="home">
+    <div className="home" id="Home">
       <div className="home__bg">
         <div className="container header d__flex align__items__center pxy__30">
-          <div className="row">
-            <div className="logo"></div>
+          <div className="row row__home">
+            <div className="logo">
+              <a href="#">
+              <img src={logo} className="navbar__logo"/>
+              </a>
+            </div>
             <div className="navigation pxy__30">
               <ul className="navbar d__flex">
                 <a href="#Home">
@@ -75,16 +86,52 @@ function Home() {
                 <a href="#Contact">
                   <li className="col-12 nav__items mx__15">{t("navbar.Contact")}</li>
                 </a>
-                <li>
-                    <select className="uz" aria-label="Default select example" onChange={changeLanguage} defaultValue="ru" >
+                <li className="li__language">
+                    <select className="uz" id="select" aria-label="Default select example" onChange={changeLanguage} defaultValue="ru" >
                       <option className="uz lang" value="uz">UZ</option>
                       <option className="uz lang" value="ru" selected="true">RU</option>
                       <option className="uz lang" value="en">EN</option>
                     </select>                  
               </li>
               </ul>
-            
             </div>
+            <div className="toggle__menu">
+              <BsJustify className="white" id="menu__svg" onClick={()=>setShow(!show)}/>
+              {show ?  (
+
+              <div className="sideNavbar">
+              <ul className="sidebar d_flex">
+                <li className="sideNavbar">
+                  <a href="#Home">Home</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#about">About</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#Services">Services</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#Portfolio">Portfolio</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#Blog">Blog</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#Contact">Contact</a>
+                </li>
+                <li className="li__language">
+                    <select className="uz" id="select" aria-label="Default select example" onChange={changeLanguage} defaultValue="ru" >
+                      <option className="uz lang" value="uz" >UZ</option>
+                      <option className="uz lang" value="ru" selected="true">RU</option>
+                      <option className="uz lang" value="en">EN</option>
+                    </select>                  
+              </li>
+              </ul>
+            </div>):null}
+
+            </div>
+         
+            
           </div>
         </div>
         {/* HOME CONTENT */}

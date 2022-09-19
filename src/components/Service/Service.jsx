@@ -10,7 +10,8 @@ const textAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.7 },
+
   }),
 };
 const BlockAnimation = {
@@ -21,7 +22,7 @@ const BlockAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.5,delay: custom * 0.2 },
   }),
 };
 const createBoxs = (HText, text1, text2, text3, custom) => {
@@ -106,7 +107,7 @@ function Service() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.2 }}
+          viewport={{ amount: 0.2,  once: true  }}
           className="row"
           id="boxRow"
         >

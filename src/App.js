@@ -4,7 +4,9 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Service from './components/Service/Service';
 import Project from './components/Project/Project';
-import Blesk from './components/blesk/Blesk';
+import News from './components/News/News';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <About/>
       <Service/>
       <Project/>
-      <Blesk/>
+      <News/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

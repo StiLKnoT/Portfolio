@@ -31,14 +31,18 @@
     background-size: cover;
 }
 .home .logo{
-    margin-top: 0.5%;
+    padding: 10px 0 !important;
+}
+.logo img{
+    width: 45px;
+    height: 45px;
 }
 li.nav__items{
     font-size: 18px;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 .home__content{
-    padding: 200px 0px;
+    padding-top: 250px;
 }
 h1.home__text{
     font-size: 18px;
@@ -73,11 +77,98 @@ h4.home__text{
 .home__text{
     opacity: 0;
 }
+#select{
+    border-radius: 10px;
+}
+.option, .lang, .uz{
+    border-radius: 10px !important;
+}
+.header{
+    transition: .4s all ease;
+}
+.header.active{
+    position: fixed;
+    z-index: 1000;
+    width: 100% !important;
+    padding: 0 30px;
+    background-color: #191919;
+}
+
+.toggle__menu{
+    display: none;
+}
+.navbar__logo{
+    animation: logo 8s ease-in-out infinite;
+
+}
+@keyframes logo{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+
+/* select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appeareance: none;
+    appearance: none;
+    box-shadow: none;
+    background: #5c6664;
+    border: 0 !important;
+    border-radius: 10px;
+}
+
+select::-ms-expand{
+    display: none;
+}
+select {
+    position: relative;
+    display: flex;
+    width: 3em;
+    height: auto;
+    line-height: 3;
+    background: #F9004D;
+    overflow: hidden;
+    border-radius: 50%;
+}
+select {
+    flex: 1;
+    padding: 0 .7em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+select::after{
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #000;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+} */
+
+
+
+
 
 @media screen and (min-width:1600px) {
     .home{
         max-width: 1600px;
         margin: 0 auto;
+    }
+    .row, .header.active{
+        max-width: 1600px;
     }
     
 }
@@ -109,6 +200,69 @@ h4.home__text{
         justify-content: center;
     }
 }
+@media screen and (max-width: 947px) {
+    .navigation.pxy__30 {
+        display: none;
+    }
+    .toggle__menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    .toggle__menu .white{
+        /* font-size: 50px !important; */
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        z-index: 1111;
+    }
+    .row__home{
+        justify-content: space-between;
+        width: 92%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    #menu__svg.white.pointer {
+        width: 30px;
+        height: 30px;
+    }
+    .home .logo{
+        padding: 10px !important;
+    }
+    .toggle__menu{
+        display: flex;
+        justify-content: space-between;
+        float: right;
+        z-index: 1000;
+        flex-direction: row-reverse;
+        width: 200px;
+        align-items: flex-start;
+        right: 0;    
+    }
+    ul.sidebar.d__flex{
+        display: flex !important;
+        flex-wrap: wrap;
+       
+        flex-direction: column;
+    }
+    .sideNavbar .d_flex{
+        display: flex;
+        flex-direction: column;
+        background: #010101;
+        position: fixed;
+        height: 100%;
+        right: 0%;
+        top: 0%;
+        width: 220px;
+        padding-top: 30px;
+    }
+    .sidebar.d_flex li{
+        padding: 10px 20px;
+    }
+ 
+    
+}
     
 @media only screen and (max-width: 768px){
     col-12 {
@@ -119,12 +273,17 @@ h4.home__text{
         flex-wrap: wrap;
         align-items: center;
     }
-    .home__content{
-        padding: 125px 0;
-    }
+
     .myMainImg{
         height: auto !important;
     }
+    h2.white.pz__10 {
+        font-size: 50px !important;
+    }
+    .sideNavbar .d_flex{
+        width: 200px;
+    }
+
 }
 @media only screen and (max-width: 664px){
     col-12 { 
@@ -136,6 +295,9 @@ h4.home__text{
     }
     .home__bg {
         background-position: 82%;
+    }
+    .toggle__menu{
+        width: auto;
     }
 }
 @media only screen and (max-width: 342px){
@@ -149,8 +311,11 @@ h4.home__text{
     }
 }
 @media only screen and (max-width: 425px){
-span.copyright {
-    font-size: 13px!important;
+    span.copyright {
+        font-size: 13px!important;
+    }
+    .home__content{
+        padding-top: 200px !important;
     }
 } 
 

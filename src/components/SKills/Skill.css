@@ -247,4 +247,11 @@
     }
   }
   
+@media screen and (min-width: 1600px) {
+  .skills, .wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+}
   
