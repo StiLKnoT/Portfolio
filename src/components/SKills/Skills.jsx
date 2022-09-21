@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import './Skill.css'
 import kozimxon from "../../img/kozimxon.png";
 import taqi from "../../img/taqi.png";
@@ -25,6 +26,8 @@ import vscodeImg from '../../img/vscodeImg.jpg'
 
 
 function Skills() {
+  const {t, i18n} = useTranslation()
+
   return (
     <div className='skills'>
    
@@ -68,26 +71,26 @@ function Skills() {
         <div className="marquee marquee--reverse ">
           
           <div className="marquee__group">
-            <div><span>Teamwork </span></div>
-            <div><span>Communication</span></div>
-            <div><span>Сreative</span></div>
-            <div><span>Adaptability</span></div>
-            <div><span>Time management</span></div>
-            <div><span>Сonfident</span></div>
-            <div><span>Critical thinking</span></div>
+            <div><span>{t("skills.Teamwork")} </span></div>
+            <div><span>{t("skills.Communication")}</span></div>
+            <div><span>{t("skills.Сreative")}</span></div>
+            <div><span>{t("skills.Adaptability")}</span></div>
+            <div><span>{t("skills.TimeManagement")}</span></div>
+            <div><span>{t("skills.Сonfident")}</span></div>
+            <div><span>{t("skills.CriticalThinking")}</span></div>
            
             
           </div>
           
           <div aria-hidden="true" className="marquee__group">
 
-            <div><span>Teamwork </span></div>
-            <div><span>Communication</span></div>
-            <div><span>Сreative</span></div>
-            <div><span>Adaptability</span></div>
-            <div><span>Time management</span></div>
-            <div><span>Сonfident</span></div>
-            <div><span>Critical thinking</span></div>
+            <div><span>{t("skills.Teamwork")} </span></div>
+            <div><span>{t("skills.Communication")}</span></div>
+            <div><span>{t("skills.Сreative")}</span></div>
+            <div><span>{t("skills.Adaptability")}</span></div>
+            <div><span>{t("skills.TimeManagement")}</span></div>
+            <div><span>{t("skills.Сonfident")}</span></div>
+            <div><span>{t("skills.CriticalThinking")}</span></div>
           
 
             

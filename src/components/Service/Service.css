@@ -15,7 +15,8 @@ p.heading.p__color{
 }
 .service__box{
     border-radius: 10px;
-    width: 100%;
+    width: 360px;
+    height: 360px;
     background-color: #191919;
     padding: 55px;
     transition: .4s ease;
@@ -45,6 +46,9 @@ h1.service__text{
     font-family: Poppins, sans-serif;
     padding: 10px 0px;
 }
+#boxRow{
+    margin: 50px 0 50px 0;
+}
 
 
 @media screen and (min-width: 1600px) {
@@ -54,10 +58,23 @@ h1.service__text{
     }   
     
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
     .service__box{
+        width: 300px;
+        height: 300px;
         padding: 32px;
     }
-    
+}
+@media screen and (max-width: 1001px) {
+    #boxRow{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .service__box{
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    }
 }

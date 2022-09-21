@@ -214,7 +214,7 @@ function About() {
                 variants={btnAnimation}
                 className="about__button d__flex align__items__center"
               >
-                <a href={myCV} download="CV Karshiyev Nurlan">
+                <a href={myCV} download="CV Karshiev Nurlan">
                   <button className="about btn pointer" id="aboutBtn">
                     {t("about.CV")}
                   </button>

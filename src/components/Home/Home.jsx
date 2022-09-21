@@ -60,7 +60,7 @@ function Home() {
     <div className="home" id="Home">
       <div className="home__bg">
         <div className="container header d__flex align__items__center pxy__30">
-          <div className="row row__home">
+          <div className="row row__home" id="header_row">
             <div className="logo">
               <a href="#">
               <img src={logo} className="navbar__logo"/>
@@ -102,22 +102,22 @@ function Home() {
               <div className="sideNavbar">
               <ul className="sidebar d_flex">
                 <li className="sideNavbar">
-                  <a href="#Home">Home</a>
+                  <a href="#Home">{t("navbar.Home")}</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="#about">About</a>
+                  <a href="#about">{t("navbar.About")}</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="#Services">Services</a>
+                  <a href="#Services">{t("navbar.Services")}</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="#Portfolio">Portfolio</a>
+                  <a href="#Portfolio">{t("navbar.Portfolio")}</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="#Blog">Blog</a>
+                  <a href="#Blog">{t("navbar.Blog")}</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="#Contact">Contact</a>
+                  <a href="#Contact">{t("navbar.Contact")}</a>
                 </li>
                 <li className="li__language">
                     <select className="uz" id="select" aria-label="Default select example" onChange={changeLanguage} defaultValue="ru" >

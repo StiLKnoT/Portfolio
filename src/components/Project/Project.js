@@ -11,6 +11,8 @@ import taqi from "../../img/taqi.png";
 import smm from "../../img/smm.png";
 import bolajon from "../../img/bolajon.png";
 import queshion from "../../img/queshion.jpg";
+import { useTranslation } from "react-i18next";
+
 
 const textAnimation = {
   hidden: {
@@ -32,7 +34,7 @@ const BlockAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.5,delay: custom * 0.2 },
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.35,delay: custom * 0.15 },
   }),
 };
 
@@ -41,86 +43,91 @@ const createProjects = (img, dev, title, link, custom) => {
   return { img, dev, title, link, custom };
 };
 
-const projectArr = [
-  createProjects(
-    gits,
-    "GITS.UZ",
-    "Site for guides and tourists",
-    "http://gits.uz/",
-    1
-  ),
-  createProjects(
-    kozimxon,
-    "Kozimxon Turayev",
-    "Business training courses",
-    "https://kozimxon.uz/",
-    2
-  ),
-  createProjects(
-    taqi,
-    "University Website",
-    "TAQI",
-    "https://tiace.netlify.app",
-    3
-  ),
-  createProjects(
-    smm,
-    "SMM CREATIVE",
-    "Landing page for SMM",
-    "https://smmonline.netlify.app/",
-    4
-  ),
-  createProjects(
-    bolajon,
-    "Bolajon",
-    "Private kindergarten website",
-    "https://kindergard.netlify.app/",
-    5
-  ),
-  createProjects(
-    Project__Sneak,
-    "Online Shop ",
-    "Sneakers shop",
-    "https://reactjs-sneakers.netlify.app",
-    6
-  ),
-];
+
 
 const createOthers = (img, dev, title, link, custom) => {
   return { img, dev, title, link, custom };
 };
 
-const arrOther = [
-    createOthers(
-      queshion,
-    "EMPTY",
-    "Your application can be here",
-    "#",
-    1
-  ),
-    createOthers(
-    Project__Olig,
-    "Online TEST SHOP",
-    "Online shop",
-    "https://onlineshop075-20.netlify.app",
-    2
-  ),
-    createOthers(
-      queshion,
-    "EMPTY",
-    "Your application can be here",
-    "#",
-    3
-  ),
-];
 
 function Project() {
     const [others, setOthers] = useState(false)
     const [click, setClick] = useState(false)
+    const {t, i18n} = useTranslation()
+
     function btnClick(){
         setOthers(!others)
         setClick(!click)
     }
+    const projectArr = [
+      createProjects(
+        gits,
+        "GITS.UZ",
+        `${t("project.siteText1")}`,
+        "http://gits.uz/",
+        1
+      ),
+      createProjects(
+        kozimxon,
+        "Kozimxon Turayev",
+        `${t("project.siteText2")}`,
+        "https://kozimxon.uz/",
+        2
+      ),
+      createProjects(
+        taqi,
+        "TAQI",
+        `${t("project.siteText3")}`,
+        "https://tiace.netlify.app",
+        3
+      ),
+      createProjects(
+        smm,
+        "SMM CREATIVE",
+        `${t("project.siteText4")}`,
+        "https://smmonline.netlify.app/",
+        4
+      ),
+      createProjects(
+        bolajon,
+        "Bolajon",
+        `${t("project.siteText5")}`,
+        "https://kindergard.netlify.app/",
+        5
+      ),
+      createProjects(
+        Project__Sneak,
+        "Online Shop ",
+        `${t("project.siteText6")}`,
+        "https://reactjs-sneakers.netlify.app",
+        6
+      ),
+    ];
+
+    const arrOther = [
+      createOthers(
+        queshion,
+        `${t("project.empty")}`,
+      `${t("project.siteText7")}`,
+      "#",
+      1
+    ),
+      createOthers(
+      Project__Olig,
+      "Online TEST SHOP",
+      `${t("project.siteText8")}`,
+      "https://onlineshop075-20.netlify.app",
+      2
+    ),
+      createOthers(
+        queshion,
+        `${t("project.empty")}`,
+      `${t("project.siteText9")}`,
+      "#",
+      3
+    ),
+  ];
+  
 
   return (
     
@@ -132,7 +139,7 @@ function Project() {
         className="heading"
       >
         <motion.h1 custom={1} variants={textAnimation} className="heading2">
-          My Latest Project
+          {t("project.title")}
         </motion.h1>
         <motion.p
           custom={2}
@@ -140,14 +147,14 @@ function Project() {
           className="heading2 p__color"
         >
           {" "}
-          There are many variations of passages of Lorem Ipsum availables
+          {t("project.text1")}
         </motion.p>
         <motion.p
           custom={3}
           variants={textAnimation}
           className="heading2 p__color"
         >
-          but the majority have suffered alteration.
+          {t("project.text2")}
         </motion.p>
       </motion.div>
       <div className="container">
@@ -185,7 +192,7 @@ function Project() {
                         href={project.link}
                         className="project__btn"
                       >
-                        View Details
+                        {t("project.viewDetails")}
                       </a>
                     </div>
                   </div>
@@ -330,7 +337,7 @@ function Project() {
   })}</motion.div> : null}
         </motion.div>
         <div className="view__more__btn d__flex align__items__center justify__content__center pxy__30">
-          <button className="view__more pointer btn" onClick={()=>btnClick()}>{click ? <>Close</>:<>View more</>}</button>
+          <button className="view__more pointer btn" onClick={()=>btnClick()}>{click ? <>{t("project.close")}</>:<>{t("project.viewMore")}</>}</button>
         </div>
        
       </div>

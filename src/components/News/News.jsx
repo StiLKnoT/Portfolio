@@ -1,9 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./News.css";
 import gits from "../../img/gitsUz.png";
-import Astr from '../../img/Astr.jpg'
-import Astr2 from '../../img/Astr2.jpg'
+import Samarkand from '../../img/Samarkand.jpg'
+import Aydarkul from '../../img/Aydarkul.jpg'
+import Parkent from '../../img/parkent.jpg'
+import Bashnya from '../../img/bashnya.jpg'
+import NBU from '../../img/nbu.jpg'
 import { motion } from "framer-motion";
+
+
 
 const textAnimation = {
   hidden: {
@@ -18,6 +24,8 @@ const textAnimation = {
 };
 
 function Blesk() {
+  const {t, i18n} = useTranslation()
+
   return (
     <div style={{background:"black"}} className=" component__space" id="Blog">
         <motion.div
@@ -27,7 +35,7 @@ function Blesk() {
         className="heading"
         >
             <motion.h1 custom={1} variants={textAnimation} className="heading">
-              My Blog
+              {t("blog.blog")}
             </motion.h1>
         </motion.div>
       <div className="wrapperCard">
@@ -39,27 +47,27 @@ function Blesk() {
 
         <div className="cards">
           <figure className="card">
-            <img src="https://i.pinimg.com/originals/65/b7/43/65b743cb3fcf0e32690826bfefc6a63c.jpg" />
+            <img src={Aydarkul} />
 
-            <figcaption><span className="active__text">Gits.uz</span></figcaption>
+            <figcaption><span className="active__text">{t("blog.Aydarkul")}<br/><br/>{t("blog.AydarkulText")}</span></figcaption>
           </figure>
 
           <figure className="card">
-            <img src={Astr} />
+            <img src={Samarkand} />
 
-            <figcaption><span className="active__text">Stick Fight</span></figcaption>
+            <figcaption><span className="active__text">{t("blog.Samarkand")}<br/><br/>{t("blog.SamarkandText")}</span></figcaption>
           </figure>
 
           <figure className="card">
-            <img src={Astr2} />
+            <img src={Bashnya} />
 
-            <figcaption><span className="active__text">Minion Masters</span></figcaption>
+            <figcaption><span className="active__text">{t("blog.Tower")}<br/><br/>{t("blog.TowerText")}</span></figcaption>
           </figure>
 
           <figure className="card">
-            <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+            <img src={NBU} />
 
-            <figcaption><span className="active__text">KoseBoz!</span></figcaption>
+            <figcaption><span className="active__text">{t("blog.NBU")}<br/><br/>{t("blog.NBUText")}</span></figcaption>
           </figure>
         </div>       
       </div>

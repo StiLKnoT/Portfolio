@@ -1,25 +1,29 @@
 import React from 'react'
 import './Contact.css'
 import Astr from '../../img/Astr.jpg'
+import { useTranslation } from "react-i18next";
+
 
 
 function Contact() {
+  const {t, i18n} = useTranslation()
+
   return (
     <div className="contact component__space" id='Contact'>
       <div className="row">
         <div className="col__2">
           <div className="contact__box">
             <div className="contact__meta">
-              <h1 className="hire__text">Hire Me.</h1>
-              <p className="hire__text white">I am availabe for freelance work. Connect with me via phone:</p>
-              <p className="hire__text white"><strong>+998 90 012 35 43</strong> or email <strong>stilknot@gmail.com</strong></p>
+              <h1 className="hire__text">{t("contact.hireMe")}.</h1>
+              <p className="hire__text white">{t("contact.aboutMe")} {t("contact.connect")}</p>
+              <p className="hire__text white"><strong>+998 90 012 35 43</strong> {t("contact.or")} <strong>stilknot@gmail.com</strong></p>
             </div>
             <div className="input__box">
-              <input type="text" className="contact name" placeholder="Your name *" />
-              <input type="text" className="contact email" placeholder="Your Email *" />
-              <input type="text" className="contact subject" placeholder="Write a Subject " />
-              <textarea name="message" id="message" placeholder="Write Your message"></textarea>
-              <button className="btn contact pointer" type="submit">Submit</button>
+              <input type="text" className="contact name" placeholder= {t("contact.name")+" *"} />
+              <input type="text" className="contact email" placeholder={t("contact.email")+" *"} />
+              <input type="text" className="contact subject" placeholder={t("contact.subject")} />
+              <textarea name="message" id="message" placeholder={t("contact.message")}></textarea>
+              <button className="btn contact pointer" type="submit">{t("contact.submit")}</button>
             </div>
           </div>
         </div>

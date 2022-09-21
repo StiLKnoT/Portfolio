@@ -34,8 +34,8 @@
     padding: 10px 0 !important;
 }
 .logo img{
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
 }
 li.nav__items{
     font-size: 18px;
@@ -79,6 +79,7 @@ h4.home__text{
 }
 #select{
     border-radius: 10px;
+    margin: 5px;
 }
 .option, .lang, .uz{
     border-radius: 10px !important;
@@ -157,10 +158,25 @@ select::after{
     pointer-events: none;
     transition: .25s all ease;
 } */
+.nav__items {
+    padding: 5px 10px;
+}
+.nav__items:hover, .nav__items:active{
+    background: #F9004D;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
 
 
-
-
+div.row.row__home {
+    display: flex;
+    justify-content: space-between !important;
+    width: 80%;
+    margin: 0 auto;
+}
+li.sideNavbar a:hover, li.sideNavbar a:active{
+    color: #F9004D;
+}
 
 @media screen and (min-width:1600px) {
     .home{
@@ -187,6 +203,12 @@ select::after{
         display: flex;
         flex-wrap: wrap;
     }
+    div.row.row__home{
+        width: 90%;
+    }
+    .mx__15{
+        margin: 0 5px;
+    }
 }
 
 @media only screen and (max-width: 1034px){
@@ -198,6 +220,9 @@ select::after{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+    }
+    .pxy__30 {
+        padding: 22.1px 0px;
     }
 }
 @media screen and (max-width: 947px) {
@@ -260,6 +285,9 @@ select::after{
     .sidebar.d_flex li{
         padding: 10px 20px;
     }
+    #select{
+        margin: 0px;
+    }
  
     
 }
@@ -282,6 +310,12 @@ select::after{
     }
     .sideNavbar .d_flex{
         width: 200px;
+    }
+    .header.active{
+        padding: 0px;
+    }
+    div.row.row__home{
+        width: 80%;
     }
 
 }
@@ -315,7 +349,7 @@ select::after{
         font-size: 13px!important;
     }
     .home__content{
-        padding-top: 200px !important;
+        padding-top: 250px !important;
     }
 } 
 

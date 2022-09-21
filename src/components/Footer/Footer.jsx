@@ -15,7 +15,7 @@ function Footer() {
             <a href='#'>
                  <img src={logo} alt="" className="footer__img pointer" />
             </a>
-      <span className="copyright" style={{color: "#c6c9d8", fontSize: "14px", opacity:"0.75" }}>Copyright © 2022 Nurlan Karshiyev All Rights Reserved</span>
+      <span className="copyright" style={{color: "#c6c9d8", fontSize: "14px", opacity:"0.75" }}>Copyright © 2022 Nurlan Karshiev All Rights Reserved</span>
       </div>
 
     </div>
