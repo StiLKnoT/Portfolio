@@ -23,36 +23,36 @@
     "course": "Course: 3",
 
     "iAm": "I'm junior frontend developer, currently",
-    "goals": "I use React JS and ES6, there are several goals:",
+    "goals": "My stack React JS(ES6)/i18n/MUI, my goals:",
     "specialist": "- become a pro at my specializations",
-    "creation": "- creation of high-quality projects and launch them online",
+    "creation": "- creation of high-quality projects,  launch and development of them in the online platform",
     "demand": "- be in demand specialist",
 
     "CV": "Download CV",
     "hireME": "Hire me"
   },
   "service": {
-    "title": "Mening ajoyib xizmatim",
+    "title": "My Awesome Services",
     "text1": "Important details of site development",
     "text2": "Before starting the project, you should decide on the details and goals for the further use of the site."
   },
   "service1": {
     "type": "Site creation",
-    "text1": "Landing, business card site,",
-    "text2": "Multipage site,",
+    "text1": "Business card site,",
+    "text2": "Landing, Multipage site,",
     "text3": "Online store."
   },
   "service2": {
     "type": "Site support",
     "text1": "Making updates,",
-    "text2": "Improvement, Change of website design,",
-    "text3": "Bug fixes."
+    "text2": "Change of website design,",
+    "text3": "Improvement, Bug fixes."
   },
   "service3": {
     "type": "Selling site",
-    "text1": "You will get",
-    "text2": "professional site with high",
-    "text3": "click rate."
+    "text1": "You will receive",
+    "text2": "a finished product ",
+    "text3": "to promote your brand."
   },
   "project": {
     "title": "My Latest Project",

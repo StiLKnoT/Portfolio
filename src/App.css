@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   outline: none;
+  font-family: 'Roboto Slab', serif !important;
 }
 ::-webkit-scrollbar {
   width: 0.5em;
@@ -99,6 +100,9 @@ p{
   align-items: flex-start;
   justify-content: center;
 }
+#aboutBlock{
+  width: 50% !important;
+}
 .col__2 {
   max-width: 50%;
   display: flex;
@@ -176,6 +180,9 @@ button.about.btn.pointer:hover {
   
 }
 @media only screen and (max-width: 768px){
+#aboutBlock{
+  width: 100% !important;
+}
 .col__2 {
     max-width: 100%;
 }

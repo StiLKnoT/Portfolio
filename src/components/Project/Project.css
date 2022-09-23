@@ -79,7 +79,7 @@ a.project__btn:hover{
     color: black;
 }
 button.btn{
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;

@@ -8,7 +8,7 @@
   background: white;
 }
 .myMainImg {
-  height: 600px;
+  height: 580px;
 }
 img.about__img {
   border-radius: 10px;
@@ -22,9 +22,13 @@ img.about__img {
   -webkit-box-shadow: 10px 10px 4px -2px rgba(34, 60, 80, 0.33);
   -moz-box-shadow: 10px 10px 4px -2px rgba(34, 60, 80, 0.33);
   box-shadow: 10px 10px 4px -2px rgba(34, 60, 80, 0.33);
+  font-family: 'Roboto Slab', serif;
+
 }
 button.about.btn.pointer {
   background: #f9004d;
+  font-family: 'Roboto Slab', serif;
+
 }
 .button.btn {
   background: white !important;
@@ -33,7 +37,7 @@ h1.about__heading {
   margin-bottom: 10px;
   font-weight: 700;
   text-align: start;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 60px;
   color: black;
   text-shadow: 2px 2px #fff;
@@ -110,6 +114,7 @@ button.about.btn.pointer {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    font-family: 'Roboto Slab', serif !important;
 }
 .social__icons{
 
@@ -308,6 +313,10 @@ a.bottom__to__top::after{
 @media screen and (max-width: 550px) {
   .PlayBtn {
     top: -350px;
+  }
+  h1.about__heading{
+    font-size: 50px;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 460px) {

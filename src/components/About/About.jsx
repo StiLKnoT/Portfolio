@@ -130,7 +130,7 @@ function About() {
                           </div>
                         ) : null} */}
           </motion.div>
-          <motion.div initial="hidden" whileInView="visible" className="col__2">
+          <motion.div initial="hidden" whileInView="visible" className="col__2" id="aboutBlock">
             <motion.h1
               custom={1}
               variants={textAnimation}

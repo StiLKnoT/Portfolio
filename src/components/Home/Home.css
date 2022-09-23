@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
+
+
+
 @media (prefers-reduced-motion: no-preference){
     :root{
         scroll-behavior: smooth !important;
@@ -39,6 +45,8 @@
 }
 li.nav__items{
     font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+
     /* padding-bottom: 15px; */
 }
 .home__content{
@@ -49,23 +57,25 @@ h1.home__text{
     font-weight: 400;
     letter-spacing: 3px;
     color: rgba(198, 201, 216, .75)!important;
+    font-family: 'Roboto Slab', serif;
+
 }
 h2.home__text{
     font-size: 54px;
     line-height: 54px;
-    font-weight: 800;
-    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
 }
 h3.home__text{
     font-size: 50px;
     font-weight: 800;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Roboto Slab', serif;
     line-height: 40px;
 }
 h4.home__text{
     font-size: 50px;
     font-weight: 800;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Roboto Slab', serif;
     line-height: 40px;
 
 }
@@ -73,12 +83,14 @@ h4.home__text{
     display: inline-block;
     opacity: 1;
     font-size: 50px;
+    font-family: 'Roboto Slab', serif !important;
 }
 .home__text{
     opacity: 0;
 }
 #select{
     border-radius: 10px;
+    font-size: 16px;
     margin: 5px;
 }
 .option, .lang, .uz{
@@ -209,6 +221,12 @@ li.sideNavbar a:hover, li.sideNavbar a:active{
     .mx__15{
         margin: 0 5px;
     }
+    .nav__items{
+        font-size: 16px !important;
+    }
+    #select{
+        font-size: 14px !important;
+    }
 }
 
 @media only screen and (max-width: 1034px){
@@ -225,7 +243,7 @@ li.sideNavbar a:hover, li.sideNavbar a:active{
         padding: 22.1px 0px;
     }
 }
-@media screen and (max-width: 947px) {
+@media screen and (max-width: 977px) {
     .navigation.pxy__30 {
         display: none;
     }
@@ -279,7 +297,7 @@ li.sideNavbar a:hover, li.sideNavbar a:active{
         height: 100%;
         right: 0%;
         top: 0%;
-        width: 220px;
+        width: 260px;
         padding-top: 30px;
     }
     .sidebar.d_flex li{
@@ -309,7 +327,7 @@ li.sideNavbar a:hover, li.sideNavbar a:active{
         font-size: 50px !important;
     }
     .sideNavbar .d_flex{
-        width: 200px;
+        width: 280px;
     }
     .header.active{
         padding: 0px;
@@ -334,6 +352,20 @@ li.sideNavbar a:hover, li.sideNavbar a:active{
         width: auto;
     }
 }
+@media screen and (max-width: 576px) {
+    h1.home__text {
+        font-size: 14px !important;
+    }
+    h2.home__text, h3.home__text, h4.home__text{
+        font-size: 45px !important;
+    }
+    .home__content{
+        padding-top: 220px !important;
+    }
+    .sideNavbar .d_flex{
+        width: 220px;
+    }
+}
 @media only screen and (max-width: 342px){
     col-12 { 
         max-width: 10%;
@@ -349,7 +381,10 @@ li.sideNavbar a:hover, li.sideNavbar a:active{
         font-size: 13px!important;
     }
     .home__content{
-        padding-top: 250px !important;
+        padding-top: 220px !important;
+    }
+    .sideNavbar{
+        font-size: 14px !important;
     }
 } 
 

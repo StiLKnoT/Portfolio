@@ -23,7 +23,7 @@
       "course":"Kurs: 3",
 
       "iAm":"Men junior frontend dasturchisiman",
-      "goals":"Men React JS va ES6 dan foydalanaman, bir nechta maqsadlarim bor:",
+      "goals":"Mening STACK'im React JS(ES6)/i18n/MUI, maqsadlarim:",
       "specialist":"-  O'z sohamning professionali bo'lish",
       "creation":"- yuqori sifatli loyihalarni yaratish va ularni onlayn ishga tushirish",
       "demand":"- talabga ega bo'lgan mutaxassis bo'lish",
@@ -33,7 +33,7 @@
 
     },
     "service":{
-      "title":"Mening ajoyib xizmatim",
+      "title":"Mening xizmatim",
       "text1":"Saytni rivojlantirishning muhim tafsilotlari",
       "text2":"Loyihani boshlashdan oldin, siz saytdan keyingi foydalanish uchun tafsilotlar va maqsadlar haqida qaror qabul qilishingiz kerak."
     },
@@ -45,7 +45,7 @@
     
     },
     "service2":{
-      "type":"Saytni qo'llab-quvvatlash",
+      "type":"Saytni boshqarish",
       "text1":"Veb-saytni yangilash,",
       "text2":"Sayt dizaynini yaxshilash, o'zgartirish,",
       "text3":"Xatoliklarni tuzatish."
@@ -53,10 +53,9 @@
     },
     "service3":{
       "type":"Sotadigan veb-sayt",
-      "text1":"Siz yuqori sotuvchilikka",
-      "text2":"ega bo'lgan veb-saytni",
-      "text3":"qabul qilib olasiz"
-    
+      "text1":"Siz o'z brendingizni targ'ib",
+      "text2":"qilish uchun tayyor",
+      "text3":"mahsulotga ega bo'lasiz."    
     },
     "project":{
       "title":"So'nggi loyihamlarim",
