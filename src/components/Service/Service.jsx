@@ -2,6 +2,7 @@ import React from "react";
 import "./Service.css";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import CanvasImpo from "../3DModels/CanvasImpo";
 
 const textAnimation = {
   hidden: {
@@ -103,12 +104,13 @@ function Service() {
   ];
 
   return (
-    <div className="service component__space" id="Services">
+    <div className="service" id="Services">
+      <CanvasImpo className="ServiceModel"/>
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.2, once: true }}
-        className="heading"
+        className="heading component__space__service__top"
       >
         <motion.h1 custom={1} variants={textAnimation} className="heading">
         {t("service.title")}
@@ -136,7 +138,7 @@ function Service() {
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.2,  once: true  }}
-          className="row"
+          className="row component__space__service__bottom"
           id="boxRow"
         >
           {arr.map((box, index) => {
@@ -146,7 +148,7 @@ function Service() {
                 variants={BlockAnimation}
                 className="col__3"
               >
-                <div className="service__box pointer">
+                <div className="service__box pointer" >
                   <div className="icon">
                     {box.svg}
                   </div>

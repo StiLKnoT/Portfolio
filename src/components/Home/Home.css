@@ -28,9 +28,11 @@
         color:  #fff;
     }
 }
+.earthModel{
+    position: absolute !important;
 
+}
 .home__bg{
-    background-image: url(../../img/nurbg.jpg);
     background-color: #010101;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -111,19 +113,19 @@ h4.home__text{
     display: none;
 }
 .navbar__logo{
-    animation: logo 8s ease-in-out infinite;
+    animation: logo 120s ease infinite;
 
 }
 @keyframes logo{
-    0%{
+    from {
         transform: rotate(0deg);
 
     }
-    50%{
-        transform: rotate(-180deg);
-    }
-    100%{
+    /* 50%{
         transform: rotate(-360deg);
+    } */
+    to{
+        transform: rotate(-360deg)
     }
 }
 
@@ -185,6 +187,7 @@ div.row.row__home {
     justify-content: space-between !important;
     width: 80%;
     margin: 0 auto;
+    z-index: 1111;
 }
 li.sideNavbar a:hover, li.sideNavbar a:active{
     color: #F9004D;

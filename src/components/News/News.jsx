@@ -10,7 +10,6 @@ import NBU from '../../img/nbu.jpg'
 import { motion } from "framer-motion";
 
 
-
 const textAnimation = {
   hidden: {
     y: -100,

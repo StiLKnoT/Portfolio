@@ -2,15 +2,17 @@ import React from 'react'
 import './Contact.css'
 import Astr from '../../img/Astr.jpg'
 import { useTranslation } from "react-i18next";
-
+import CanvasMars from '../3DModels/CanvasMars';
 
 
 function Contact() {
   const {t, i18n} = useTranslation()
 
   return (
-    <div className="contact component__space" id='Contact'>
-      <div className="row">
+    <div className="contact" id='Contact'>
+            <CanvasMars/>
+
+      <div className="row component__space" >
         <div className="col__2">
           <div className="contact__box">
             <div className="contact__meta">

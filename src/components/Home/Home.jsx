@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import { motion } from "framer-motion";
 import logo from "../../img/snake.png";
+import redLogo from "../../img/redLogo.png";
 import About from "../About/About";
 import { useRef } from "react";
 import { useEffect } from "react";
@@ -12,6 +13,7 @@ import { TextPlugin } from "gsap/TextPlugin";
 import { useTranslation } from "react-i18next";
 import {BsJustify} from "react-icons/bs"
 import {ReactComponent as UzFlag} from '../../svg/uz.svg'
+import ModelThree from "../CanvasContainer/ModelThree";
 
 
 function Home() {
@@ -59,11 +61,13 @@ function Home() {
   return (
     <div className="home" id="Home">
       <div className="home__bg">
+      <ModelThree className="earthModel" />
+
         <div className="container header d__flex align__items__center pxy__30">
           <div className="row row__home" id="header_row">
             <div className="logo">
               <a href="#">
-              <img src={logo} className="navbar__logo"/>
+              <img src={redLogo} className="navbar__logo"/>
               </a>
             </div>
             <div className="navigation pxy__30">

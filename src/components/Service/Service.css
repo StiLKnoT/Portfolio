@@ -1,10 +1,18 @@
+.heading{
+    position: relative;
+    z-index: 50;
+}
+
+
 h1.heading{
     font-size: 60px;
     text-align: center;
     font-family: Poppins, sans-serif;
     font-weight: 700;
     margin-bottom: 10px;
+
 }
+
 .service {
     background-color: black;
 }
@@ -49,14 +57,39 @@ h1.service__text{
 #boxRow{
     margin: 50px 0 50px 0;
 }
-
+.col__3{
+    z-index: 50;
+}
+.ServiceModel{
+    width: 100%;
+    height: 100vh;
+    position: absolute !important;
+    z-index: 1;
+}
+.CanvasImpo{
+    width: 100%;
+}
+.component__space__service__top{
+    padding: 80px 0 0 0;
+}
+.component__space__service__bottom{
+    padding: 0 0 80px 0;
+}
 
 @media screen and (min-width: 1600px) {
-    .service{
+    .service, .ServiceModel{
         max-width: 1600px;
         margin: 0 auto;
-    }   
+    }
+    .ServiceModel{
+        height: 762px;
+    }
     
+}
+@media screen and (max-width: 1600px) {
+    .ServiceModel{
+        height: 762px;
+    }    
 }
 @media screen and (max-width: 1250px) {
     .service__box{
@@ -64,10 +97,17 @@ h1.service__text{
         height: 300px;
         padding: 32px;
     }
+    .ServiceModel{
+        height: 702.4px;
+    }  
+  
 }
 @media screen and (max-width: 1001px) {
     #boxRow{
         margin: 0px;
+    }
+    .ServiceModel{
+        height: 1034px;
     }
 }
 
@@ -76,5 +116,13 @@ h1.service__text{
     width: 300px;
     height: 300px;
     padding: 30px;
+    }
+    .ServiceModel{
+        height: 1394px;
+    }
+}
+@media screen and (max-width: 519px) {
+    .ServiceModel{
+        height: 1415.6px;
     }
 }

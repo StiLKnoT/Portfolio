@@ -1,5 +1,5 @@
 .contact{
-    background: #191919;
+    background: black;
 }
 .h1.hire__text {
     font-size: 60px;
@@ -49,9 +49,64 @@ textarea#message{
 button.btn.contact.pointer {
     margin: 20px 0px;
 }
+.canvasMars{
+    position: absolute;
+    width: 100%;
+    height: 728px;  
+    z-index: 11;
+}
+.col__2{
+    z-index: 50;
+}
+#col__2__contact__img{
+    z-index: 10 ;
+}
+@media screen and (min-width: 1600px) {
+    .canvasMars{
+      max-width: 1600px;
+      margin: 0 auto;
+      height: 728px;
+    }
+    
+}
+@media screen and(max-width: 1600px) {
+    .canvasMars{
+        height: 728px;
+    } 
+}
+@media screen and (max-width: 1286px) {
+    .canvasMars{
+        height: 758px;
+    } 
+}
+@media screen and (max-width: 1092px) {
+    .canvasMars{
+        height: 788px;
+    } 
+}
+@media screen and (max-width: 768px) {
+    .canvasMars{
+        height: 1288px;
+    }  
+}
+@media screen and (max-width: 643px) {
+    .canvasMars{
+        height: 1318px;
+    }
+    
+}
 @media screen and (max-width: 576px) {
     #col__2__contact__img{
         display: none;
+    }
+    .canvasMars{
+        height: 758px;
+    }
+    
+}
+@media screen and (max-width: 545px) {
+    .canvasMars{
+        height: 788px;
     }
     
 }
