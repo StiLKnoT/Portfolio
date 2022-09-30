@@ -18,7 +18,8 @@ function CanvasImpo() {
           zoomSpeed={0.6}
           panSpeed={0.5}
           rotateSpeed={0.4}
-        />          <ambientLight intensity={0.5} />
+        />     
+             <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]}  />
           <Suspense fallback={Loading}>
             <EarthImpo />

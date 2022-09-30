@@ -12,14 +12,15 @@ function CanvasMars() {
   return (
     <div className='canvasMars'>
           <Canvas className="canvas" style={{width: "100%"}}>
-          <OrbitControls
+          {/* <OrbitControls
           enableZoom={false}
           enablePan={true}
           enableRotate={true}
           zoomSpeed={0.6}
           panSpeed={0.5}
           rotateSpeed={0.4}
-        />          <ambientLight intensity={0.5} />
+        />     */}
+              <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]}  />
           <Suspense fallback={Loading}>
             <Mars />

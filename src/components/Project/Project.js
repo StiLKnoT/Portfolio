@@ -327,7 +327,7 @@ function Project() {
                 href={project.link}
                 className="project__btn"
               >
-                View Details
+                        {t("project.viewDetails")}
               </a>
             </div>
           </div>
