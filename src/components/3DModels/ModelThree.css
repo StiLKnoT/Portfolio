@@ -4,6 +4,10 @@
 #CanvasMobile{
     display: none;
 }
+.loader{
+    position: fixed;
+    z-index: 99999;
+}
 @media screen and (min-width: 1600px) {
     .CanvasContainer{
         max-width: 1600px;

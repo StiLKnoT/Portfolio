@@ -13,7 +13,7 @@ function Contact() {
             <CanvasMars/>
 
       <div className="row component__space" >
-        <div className="col__2">
+        <div className="col__2 col__2__contact__info">
           <div className="contact__box">
             <div className="contact__meta">
               <h1 className="hire__text">{t("contact.hireMe")}.</h1>

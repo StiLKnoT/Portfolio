@@ -74,9 +74,11 @@ function About() {
             initial="hidden"
             whileInView="visible"
             variants={videoAnimation}
+            viewport={{ amount: 0.4, once: true }}
+
             className="col__2 myMainImg"
           >
-            <img src={aboutImg} className="about__img" />
+            <motion.img variants={imgAnimation} src={aboutImg} className="about__img" />
             <div style={{ position: "relative" }}>
               <img
                 src={videoPlay}

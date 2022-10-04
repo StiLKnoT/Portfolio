@@ -113,7 +113,7 @@ h4.home__text{
     display: none;
 }
 .navbar__logo{
-    animation: logo 120s ease infinite;
+    animation: logo 20s linear infinite;
 
 }
 @keyframes logo{

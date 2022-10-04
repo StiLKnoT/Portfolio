@@ -30,7 +30,7 @@ input.contact{
 }
 .contact__img{
     border-radius: 10px;
-    width: 100%;
+    width: 360.75px;
     height: 520px;
     object-fit: cover;
     overflow: hidden;
@@ -61,6 +61,9 @@ button.btn.contact.pointer {
 #col__2__contact__img{
     z-index: 10 ;
 }
+.col__2__contact__info{
+    width: 42%;
+}
 @media screen and (min-width: 1600px) {
     .canvasMars{
       max-width: 1600px;
@@ -78,6 +81,9 @@ button.btn.contact.pointer {
     .canvasMars{
         height: 758px;
     } 
+    .contact__img{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1092px) {
     .canvasMars{
@@ -87,7 +93,18 @@ button.btn.contact.pointer {
 @media screen and (max-width: 768px) {
     .canvasMars{
         height: 1288px;
-    }  
+    }
+    .contact .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #col__2__contact__img{
+        margin: 0 auto;
+    }
+    .col__2__contact__info{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 643px) {
     .canvasMars{
@@ -107,6 +124,10 @@ button.btn.contact.pointer {
 @media screen and (max-width: 545px) {
     .canvasMars{
         height: 788px;
+    }
+    .col__2__contact__info{
+        width: 100%;
+        margin: 0 auto;
     }
     
 }

@@ -23,7 +23,7 @@ function ModelThree() {
           <Earth className="earthModel"/>
         </Suspense>
       </Canvas>
-      <Loader/>
+      <Loader className="loader"/>
 
     </CanvasContainer>
     <CanvasContainer className='CanvasContainer' id="CanvasMobile">
@@ -32,7 +32,7 @@ function ModelThree() {
           <EarthMob className="earthModel"/>
         </Suspense>
       </Canvas>
-      <Loader/>
+      <Loader className="loader"/>
 
     </CanvasContainer>
     </>
