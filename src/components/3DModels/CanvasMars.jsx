@@ -3,8 +3,6 @@ import Mars from './Mars'
 import '../Contact/Contact.css'
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from 'react';
-import Loading from '../../components/Loading/Loading'
-import { OrbitControls } from "@react-three/drei";
 
 
 
@@ -22,10 +20,11 @@ function CanvasMars() {
         />     */}
               <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]}  />
-          <Suspense fallback={Loading}>
+          <Suspense fallback={null}>
             <Mars />
           </Suspense>
         </Canvas>
+        {/* <Loader/> */}
       
     </div>
   )

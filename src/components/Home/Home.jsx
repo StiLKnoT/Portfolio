@@ -1,19 +1,13 @@
 import React from "react";
 import "./Home.css";
-import { motion } from "framer-motion";
-import logo from "../../img/snake.png";
 import redLogo from "../../img/redLogo.png";
-import About from "../About/About";
 import { useRef } from "react";
 import { useEffect } from "react";
-import { TweenMax, Power3, Power2, Power4, Elastic, SlowMo, Sine, Expo} from "gsap";
+import { TweenMax, Power2, Expo} from "gsap";
 import gsap from 'gsap'
-import { RoughEase } from "gsap/EasePack";
-import { TextPlugin } from "gsap/TextPlugin";
 import { useTranslation } from "react-i18next";
 import {BsJustify} from "react-icons/bs"
-import {ReactComponent as UzFlag} from '../../svg/uz.svg'
-import ModelThree from "../CanvasContainer/ModelThree";
+import ModelThree from "../3DModels/ModelThree";
 
 
 function Home() {
@@ -93,7 +87,7 @@ function Home() {
                 <li className="li__language">
                     <select className="uz" id="select" aria-label="Default select example" onChange={changeLanguage} defaultValue="ru" >
                       <option className="uz lang" value="uz">UZ</option>
-                      <option className="uz lang" value="ru" selected="true">RU</option>
+                      <option className="uz lang" value="ru" defaultValue="true">RU</option>
                       <option className="uz lang" value="en">EN</option>
                     </select>                  
               </li>

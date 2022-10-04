@@ -164,14 +164,15 @@ function Project() {
           viewport={{ amount: 0.2,  once: true  }}
           className="row"
         >
-          {projectArr.map((project, index) => {
+          {projectArr.map((project, key) => {
             return (
               <motion.div
                 custom={`${project.custom}`}
                 variants={BlockAnimation}
                 className="col__3"
+                key={key}
               >
-                <a target="_blank" href={project.link}>
+                <div>
                   <div className="project__box pointer">
                   <div className="project__box__img pointer relative">
                     <div className="project__box__img pointer relative">
@@ -197,7 +198,7 @@ function Project() {
                     </div>
                   </div>
                 </div>
-                </a>
+                </div>
               </motion.div>
             );
           })}
@@ -300,12 +301,13 @@ function Project() {
   initial="hidden"
   whileInView="visible"
   viewport={{ amount: 0.2,  once: true  }}
-  className="row"> {arrOther.map((project, index) => {
+  className="row"> {arrOther.map((project, keys) => {
     return (
       <motion.div
         custom={`${project.custom}`}
         variants={BlockAnimation}
         className="col__3"
+        key={keys}
       >
         <div className="project__box pointer">
           <div className="project__box__img pointer relative">

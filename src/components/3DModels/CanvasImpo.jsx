@@ -4,27 +4,28 @@ import { OrbitControls } from "@react-three/drei";
 import { Suspense } from 'react';
 import EarthImpo from './EarthImpo';
 import '../Service/Service.css'
-import Loading from '../../components/Loading/Loading'
 
 
 function CanvasImpo() {
   return (
     <div className='ServiceModel'>
           <Canvas className="canvas" style={{width: "100%"}}>
-          <OrbitControls
+          {/* <OrbitControls
           enableZoom={false}
           enablePan={true}
           enableRotate={true}
           zoomSpeed={0.6}
           panSpeed={0.5}
           rotateSpeed={0.4}
-        />     
+        />      */}
              <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]}  />
-          <Suspense fallback={Loading}>
+          <Suspense fallback={null}>
             <EarthImpo />
           </Suspense>
         </Canvas>
+        {/* <Loader/> */}
+
       
     </div>
   )

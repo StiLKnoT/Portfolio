@@ -176,7 +176,7 @@ function About() {
                             Course: 3
                         </motion.h2> */}
                         <div className="about__info">
-              <motion.p
+              <motion.span
                 custom={3}
                 variants={textAnimation}
                 className="about__text p__color"
@@ -206,7 +206,7 @@ function About() {
                 {/* Hobby :<br/>
                         Sports games, participate in mini<br/>
                         travelling, photographing nature. */}
-              </motion.p>
+              </motion.span>
               </div>
               <motion.div
                 initial="hidden"

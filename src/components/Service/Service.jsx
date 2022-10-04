@@ -42,7 +42,7 @@ function Service() {
       `${t("service1.text2")}`,
       `${t("service1.text3")}`,
       1,
-      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+      <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
     ),
     createBoxs(
       `${t("service2.type")}`,
@@ -50,7 +50,7 @@ function Service() {
       `${t("service2.text2")}`,
       `${t("service2.text3")}`,
       2,
-      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+      <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
   
     ),
     createBoxs(
@@ -59,7 +59,7 @@ function Service() {
       `${t("service3.text2")}`,
       `${t("service3.text3")}`,
       3,
-      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+      <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
   
     ),
     // createBoxs(
@@ -68,7 +68,7 @@ function Service() {
     //   "tall grass by the stream as I lie",
     //   "close to the earth",
     //   4,
-    //   <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+    //   <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
   
     // ),
     // createBoxs(
@@ -77,7 +77,7 @@ function Service() {
     //   "tall grass by the stream as I lie",
     //   "close to the earth",
     //   5,
-    //   <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+    //   <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
   
     // ),
     // createBoxs(
@@ -89,10 +89,10 @@ function Service() {
     //   <svg
     //   stroke="currentColor"
     //   fill="none"
-    //   stroke-width="2"
+    //   strokeWidth="2"
     //   viewBox="0 0 24 24"
-    //   stroke-linecap="round"
-    //   stroke-linejoin="round"
+    //   strokeLinecap="round"
+    //   strokeLinejoin="round"
     //   height="1em"
     //   width="1em"
     //   xmlns="http://www.w3.org/2000/svg"
@@ -141,12 +141,13 @@ function Service() {
           className="row component__space__service__bottom"
           id="boxRow"
         >
-          {arr.map((box, index) => {
+          {arr.map((box, service) => {
             return (
               <motion.div
                 custom={`${box.custom}`}
                 variants={BlockAnimation}
                 className="col__3"
+                key={service}
               >
                 <div className="service__box pointer" >
                   <div className="icon">
@@ -162,117 +163,7 @@ function Service() {
               </motion.div>
             );
           })}
-
-          {/* <motion.div custom={2} variants={BlockAnimation} className="col__3">
-                    <div className="service__box pointer">
-                        <div className="icon">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                        </div>
-                        <div className="service__meta">
-                            <h1 className="service__text">
-                                Website Development
-                            </h1>
-                            <p className="service__text p__color">
-                                I throw my self down among the
-                            </p>
-                            <p className="service__text p__color">
-                                tall grass by the stream as I lie
-                            </p>
-                            <p className="service__text p__color">
-                               close to the earth
-                            </p>
-                        </div>
-                    </div>-
-                </motion.div>
-
-                <motion.div custom={3} variants={BlockAnimation} className="col__3">
-                    <div className="service__box pointer">
-                        <div className="icon">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        </div>
-                        <div className="service__meta">
-                            <h1 className="service__text">
-                                Marketing & Reporting
-                            </h1>
-                            <p className="service__text p__color">
-                                I throw my self down among the
-                            </p>
-                            <p className="service__text p__color">
-                                tall grass by the stream as I lie
-                            </p>
-                            <p className="service__text p__color">
-                               close to the earth
-                            </p>
-                        </div>
-                    </div>
-                </motion.div>
-                
-                <motion.div custom={4} variants={BlockAnimation} className="col__3">
-                    <div className="service__box pointer">
-                        <div className="icon">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        </div>
-                        <div className="service__meta">
-                            <h1 className="service__text">
-                                Mobile App Development
-                            </h1>
-                            <p className="service__text p__color">
-                                I throw my self down among the
-                            </p>
-                            <p className="service__text p__color">
-                                tall grass by the stream as I lie
-                            </p>
-                            <p className="service__text p__color">
-                               close to the earth
-                            </p>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <motion.div custom={5} variants={BlockAnimation} className="col__3">
-                    <div className="service__box pointer">
-                        <div className="icon">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        </div>
-                        <div className="service__meta">
-                            <h1 className="service__text">
-                                Marketing & Reporting
-                            </h1>
-                            <p className="service__text p__color">
-                                I throw my self down among the
-                            </p>
-                            <p className="service__text p__color">
-                                tall grass by the stream as I lie
-                            </p>
-                            <p className="service__text p__color">
-                               close to the earth
-                            </p>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <motion.div custom={6} variants={BlockAnimation} className="col__3">
-                    <div className="service__box pointer">
-                        <div className="icon">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        </div>
-                        <div className="service__meta">
-                            <h1 className="service__text">
-                                Mobile App Development
-                            </h1>
-                            <p className="service__text p__color">
-                                I throw my self down among the
-                            </p>
-                            <p className="service__text p__color">
-                                tall grass by the stream as I lie
-                            </p>
-                            <p className="service__text p__color">
-                               close to the earth
-                            </p>
-                        </div>
-                    </div>
-                </motion.div> */}
-        </motion.div>
+       </motion.div>
       </div>
     </div>
   );
